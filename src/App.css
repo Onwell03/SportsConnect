@@ -1,0 +1,16 @@
+html, body,.page, #root {
+  height: 100%;
+}
+.home{
+  overflow: auto;
+  padding-bottom: 160px;
+}
+#footer{
+  position: relative;
+  height: 160px;
+  margin-top: -160px;
+  clear: both;
+}
+.main{
+  min-height: 100%;
+}
