@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { supabase } from "../../client";
 
-const Edit = () => {
+const Edit = () => { 
     const {id} = useParams()
     const [post, setPost] = useState({title: "", image: "", description: "", sport:""})
 
@@ -33,8 +33,8 @@ const Edit = () => {
         event.preventDefault();
         await supabase
             .from('Posts')
-            .insert({name:post.name,subject:post.subject, description:post.description, total:post.total})
-            .select();
+            .update({name:post.name,subject:post.subject, description:post.description, total:post.total})
+            .eq('id', id);
 
         window.location = "/football";
     }
