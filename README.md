@@ -41,7 +41,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='srs/assets/walk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='src/assets/walk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
